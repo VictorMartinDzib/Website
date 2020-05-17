@@ -1,0 +1,172 @@
+<div class="bar-left shadow">
+
+    <div class="row">
+        <div class="col-md-4">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Estado</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div  class="col-md-6">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Ciudad o población</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            <a href="#" style="color: white;">
+                <fa name="search"></fa>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col-md-4">
+            <p>Vista: </p>
+        </div>
+        <div class="col-md-4">
+            <select class="custom-select custom-select-sm" style="display: block;" (change)="seleccionarCuadricula($event)"
+            [(ngModel)]="cuadricula_seleccionada">
+                <option value="" selected>Tablero</option>
+                <option value="2">Tablero 2x2</option>
+                <option value="3">Tablero 3x3</option>
+                <option value="4">Tablero 4x4</option>
+                <option value="6">Tablero 6x4</option>
+                <option value="8">Tablero 8x4</option>
+                <option value="10">Tablero 10x4</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Mapa</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col" >
+            <a href="#" style="color: white;">Filtros avanzados</a>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col-md-12">
+            <input type="text" placeholder="Telefono movil o e-mail de promotor"
+            style="width: 100%;">
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div class="col-md-6">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Colonia?</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select class="custom-select custom-select-sm" style="display: block;" >
+                <option value="" selected>Amueblada?</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div class="col-md-4 ">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Recamaras?</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Baños?</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Estacion?</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col-md-5">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>mts2 contruidos</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-5">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>mts2 de superficie</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col-md-5">
+            <select class="custom-select custom-select-sm" style="display: block;">
+                <option value="" selected>Precio desde $</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="col-md-5">
+            <select style="display: block;">
+                <option value="" selected>Ordenar por</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col-md-4">
+            <div class="selectContenedor">
+                <select class="custom-select custom-select-sm" >
+                    <option value="" selected>Publicado?</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-5" >
+            <button class="btn btn-sm"  style="background-color: white; color: black;">Reiniciar filtros</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-sm" style="background-color: white; color: black;">Aplicar</button>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <ul>
+            <li *ngFor="let opcion of lista_opciones">
+                <a [routerLink]="opcion.url">{{opcion.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

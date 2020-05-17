@@ -1,0 +1,30 @@
+.paginador{
+    position: fixed;
+    top: 90%;
+    width: 800px;
+    height: 10px;
+}
+
+.paginador ul li a{
+    color: white;
+    margin: 10px;
+    font-size: large;
+}
+
+.to_end{
+    margin-left: 55%;
+    color: white;
+    font-size: large;
+}
+
+.cuadriculas{
+    width: 100%;
+    height: auto;
+}
+
+.post{
+    display: inline-flex;
+    position: relative;
+    margin-left: 2px;
+    margin-top: 2px;
+}

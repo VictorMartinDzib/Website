@@ -1,0 +1,53 @@
+<div class="layout">
+    <app-navbar></app-navbar>
+    
+
+    <main>
+        <div class="contenido_filtros background-general">
+            <app-bar-left (cuadricula)="setCuadricula($event)"></app-bar-left>
+        </div>
+        <div class="contenido_resultados">
+            <app-bar-right [cuadriculaActual]="cuadricuaSelected"></app-bar-right>
+        </div>
+    </main>
+
+    <footer class="background-general">
+        <p>
+            Todos los derechos reservados 2018 Av. Bonampak # 1000, Cancún, Q. Roo, Aviso de Privacidad, Términos y Condiciones, Mapa del Sito
+        </p>
+    </footer>
+</div>
+
+
+
+
+<!--<div class="layout">
+
+    
+
+    <main class="row" style="margin-top: 5px;">
+
+
+            <div class="col-md-10 offset-md-1" >
+                
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <app-bar-left></app-bar-left>
+                    </div>
+                    <div class="col-md-8">
+                        <app-bar-right></app-bar-right>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </main>
+
+
+    
+</div>-->
+

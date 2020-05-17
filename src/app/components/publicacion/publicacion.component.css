@@ -1,0 +1,30 @@
+p{
+    background-color: white;
+    color: black;
+    font-size: xx-small;
+    width: 100% !important;
+    margin-top: 40%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h6{
+    background-color: white;
+    margin-left: 80px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+.card-img-overlay{
+    padding: 0rem !important;
+}
+
+.card{
+    border-radius: 0 !important;
+}
+
+.card:hover{
+    border: solid 2px black;
+}

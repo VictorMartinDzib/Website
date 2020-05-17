@@ -1,0 +1,25 @@
+.bar-left{
+    padding: 5px;
+}
+
+
+.selectContenedor{
+    border-radius:5px;
+    display:inline-block;
+    overflow:hidden;
+    background:#cccccc;
+    border:1px solid #cccccc;
+  }
+  .select{
+    border:0px;
+    outline:none;
+  }
+
+  ul{
+      list-style: none;
+      padding: 15px;
+  }
+
+  ul li a{
+      color: white;
+  }

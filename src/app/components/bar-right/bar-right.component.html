@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div  class="cuadriculas">
+        <div class="post" [ngStyle]="{width: size}" *ngFor="let i of publicaciones">
+            <app-publicacion></app-publicacion>
+        </div>
+        <br><br><br><br><br>
+    </div>
+
+    <div class="paginador background-general">
+        <ul class="pagination background-general">
+            <li class="page-item"><a class="" href="#"><<</a></li>
+            <li class="page-item" *ngFor="let p of pages; let i = index">
+                <a class="" href="#">{{i+1}}</a>
+            </li>
+            <li class="page-item"><a class="" href="#">>></a></li>
+            <li class="to_end">
+                <p>{{elementos_totales}} de {{publicaciones.length}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
