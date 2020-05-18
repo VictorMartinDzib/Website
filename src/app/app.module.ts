@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PublicacionComponent } from './components/publicacion/publicacion.component';
 import { FormsModule } from '@angular/forms';
+import { MapsComponent } from './components/maps/maps.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     BarLeftComponent,
     BarRightComponent,
     HomeComponent,
-    PublicacionComponent
+    PublicacionComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,

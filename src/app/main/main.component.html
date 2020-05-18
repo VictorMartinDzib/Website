@@ -4,10 +4,12 @@
 
     <main>
         <div class="contenido_filtros background-general">
-            <app-bar-left (cuadricula)="setCuadricula($event)"></app-bar-left>
+            <app-bar-left (cuadricula)="setCuadricula($event)" (mapa)="setCuadricula($event)"></app-bar-left>
+            
         </div>
-        <div class="contenido_resultados">
-            <app-bar-right [cuadriculaActual]="cuadricuaSelected"></app-bar-right>
+        <div  class="contenido_resultados">
+            <app-bar-right  [cuadriculaActual]="cuadricuaSelected">
+            </app-bar-right>
         </div>
     </main>
 

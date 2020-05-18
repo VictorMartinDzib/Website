@@ -15,6 +15,10 @@ export class BarRightComponent implements OnInit, OnChanges {
   padding = "10px";
   elementos_totales = 0;
 
+  listado_publicaciones: boolean = true;
+  mapas: boolean = false;
+
+
   constructor() { 
     this.cuadriculaActual = "2";
     this.elementos_totales = 4;
@@ -38,7 +42,6 @@ export class BarRightComponent implements OnInit, OnChanges {
 
   dibujarCuadriculas()
   {
-    
     switch(this.cuadriculaActual){
       case "2":
           this.size = "48%";
@@ -51,9 +54,16 @@ export class BarRightComponent implements OnInit, OnChanges {
 
         this.size = "24%";
         break;
-
       default:
         //alert("nada");
+    }
+
+    if(this.cuadriculaActual === "MP"){
+        this.mapas = true;
+        this.listado_publicaciones = false;
+    }else{
+      this.mapas = false;
+      this.listado_publicaciones = true;
     }
     
       this.elementos_totales = Math.pow(Number(this.cuadriculaActual),2);

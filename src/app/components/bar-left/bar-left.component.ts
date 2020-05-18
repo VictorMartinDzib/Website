@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class BarLeftComponent implements OnInit {
 
   @Output() cuadricula = new EventEmitter<string>();
+  @Output() mapa = new EventEmitter<string>();
 
   lista_opciones = [
     {
@@ -41,6 +42,7 @@ export class BarLeftComponent implements OnInit {
   ];
 
   cuadricula_seleccionada = "";
+  mapa_sel = "";
 
   constructor() { }
 
@@ -49,8 +51,13 @@ export class BarLeftComponent implements OnInit {
 
   seleccionarCuadricula(event){
 
-    this.cuadricula.emit( this.cuadricula_seleccionada)
+    this.cuadricula.emit( this.cuadricula_seleccionada);
+    this.mapa_sel = "";
 
+  }
+
+  mostrarMapa(event){
+    this.mapa.emit( this.mapa_sel );
   }
 
 }

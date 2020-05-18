@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   cuadricuaSelected = "";
+
+
   constructor() { }
 
   ngOnInit() {
@@ -16,4 +18,6 @@ export class MainComponent implements OnInit {
   setCuadricula(event){
     this.cuadricuaSelected = event;
   }
+
+
 }

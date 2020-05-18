@@ -10,7 +10,7 @@
             <div class="navbar_up">
                 <ul>
                     <li *ngFor="let item of secciones">
-                        <a href="#" style="font-size: large;">{{item}}</a>
+                        <a routerLink="" style="font-size: large;">{{item}}</a>
                     </li>
                 </ul>
             </div>
@@ -44,18 +44,18 @@
                     <li>
                         <div class="input-group flex-nowrap">
                             <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" placeholder="Buscar">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><fa name="search" ></fa></span>
+                            <div class="input-group-append" >
+                                <button class="input-group-text" style="background-color: white;"><fa name="search" ></fa></button>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="input-group flex-nowrap">
+                        <div class="input-group flex-nowrap" >
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" placeholder="Codigo de publicacón">
                         <div class="input-group-append">
-                            <span class="input-group-text">
+                            <button class="input-group-text" style="background-color: white;">
                                 <fa name="search" ></fa>
-                            </span>
+                            </button>
                         </div>
                       </div>
                     </li>
@@ -65,6 +65,16 @@
         </div>
         <div class="idioma-div">
             
+            <div class="grid_back"><img src="https://getdrawings.com/free-icon-bw/grid-icon-23.png" alt="" style="width: 100%;"></div>
+            <div class="select_idioma">
+                <select class="custom-select custom-select-sm" style="width: 100%;">
+                    <option value="" selected>Idioma</option>
+                    <option value="1"> Español</option>
+                    <option value="2"> Ingles</option>
+                    <option value="3"> Frances</option>
+                    <option value="3"> ...</option>
+                </select>
+            </div>
         </div>
     </div>
 
