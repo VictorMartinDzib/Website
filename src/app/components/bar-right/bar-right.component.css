@@ -1,7 +1,6 @@
 .paginador{
-    position: fixed;
-    top: 90%;
-    width: 800px;
+    position: relative;
+    width: 100%;
     height: 10px;
 }
 
@@ -19,12 +18,18 @@
 
 .cuadriculas{
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     height: auto;
 }
 
 .post{
     display: inline-flex;
     position: relative;
-    margin-left: 2px;
-    margin-top: 2px;
+}
+
+@media screen and (min-width: 1900px) {
+    .to_end{
+        margin-left: 65%;
+    }
 }

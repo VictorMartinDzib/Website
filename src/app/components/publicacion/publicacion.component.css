@@ -1,37 +1,43 @@
-p{
-    background-color: white;
-    color: black;
-    font-size: xx-small;
-    width: 100% !important;
-    margin-top: 40%;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-h6{
-    background-color: white;
-    margin-left: 80px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 10px;
-    text-align: center;
-    border: 1px solid black;
-}
-.card-img-overlay{
-    padding: 0rem !important;
-}
-
 .card{
-    border-radius: 0 !important;
+    /*background-image: url('https://www.bienesonline.com/mexico/photos/fachada-11280945132.jpg');*/
+    width: 100% !important;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s ease;
+    /* padding-top: 100%;*/
+    margin-bottom: 1% !important;
 }
 
 .card:hover{
-    border: solid 2px black;
+    opacity: 0.5;
 }
 
-.footer_card{
+.card-body{
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
+span{
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 3px;
+}
+
+.card-title{
+    text-align: end !important;
+    margin-top: 15px;
+}
+
+.card-text{
+    padding-top: 55%;
+}
+
+.card-text p{
+    background-color: white;
+    padding: 3px;
 }

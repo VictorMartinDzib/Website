@@ -23,7 +23,7 @@ main{
     width: 1200px;
     margin: auto;
     position: relative;
-    height: 90%;
+    height: 100%;
     top: 85px;
     display: flex; 
 }
@@ -36,4 +36,17 @@ main{
     width: 70%;
     position: relative;    
     overflow-y: scroll;
+}
+
+@media screen and (min-width: 1900px) {
+    main {
+        width: 1800px;
+        top: 130px;
+    }
+    footer{
+        height: 45px;
+    }
+    footer p{
+        font-size: x-large;
+    }
 }

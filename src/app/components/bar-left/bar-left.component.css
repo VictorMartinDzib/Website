@@ -23,3 +23,15 @@
   ul li a{
       color: white;
   }
+
+  @media screen and (min-width: 1900px) {
+    .bar-left{
+        padding: 15px;
+    }
+    select, button, input{
+        font-size: x-large !important;
+    }
+    ul li a{
+        font-size: x-large !important;
+    }
+}

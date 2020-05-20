@@ -53,7 +53,6 @@ export class BarLeftComponent implements OnInit {
 
     this.cuadricula.emit( this.cuadricula_seleccionada);
     this.mapa_sel = "";
-
   }
 
   mostrarMapa(event){
