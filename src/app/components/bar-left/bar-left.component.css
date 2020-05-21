@@ -1,7 +1,8 @@
 .bar-left{
     padding: 5px;
+    height: 530px;
+    overflow-y: scroll !important;
 }
-
 
 .selectContenedor{
     border-radius:5px;
@@ -33,5 +34,8 @@
     }
     ul li a{
         font-size: x-large !important;
+    }
+    .bar-left{
+        height: 800px;
     }
 }

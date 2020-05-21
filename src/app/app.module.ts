@@ -12,6 +12,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PublicacionComponent } from './components/publicacion/publicacion.component';
 import { FormsModule } from '@angular/forms';
 import { MapsComponent } from './components/maps/maps.component';
+import { AccordeonElementComponent } from './components/accordeon-element/accordeon-element.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MapsComponent } from './components/maps/maps.component';
     BarRightComponent,
     HomeComponent,
     PublicacionComponent,
-    MapsComponent
+    MapsComponent,
+    AccordeonElementComponent
   ],
   imports: [
     BrowserModule,

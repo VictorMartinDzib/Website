@@ -1,0 +1,81 @@
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.cantidad{
+    font-size: large;
+    position: absolute;
+    right: 5%;
+    color: white;
+}
+
+.sub-cantidad{
+    font-size: large;
+    position: absolute;
+    right: 20%;
+    color: white;
+}
+  
+.dropdown {
+    position: sticky;
+    display: inline-block;
+    min-width: 370px !important;
+    font-size: large;
+}
+
+.subcontent{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: relative;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    padding-left: 10%;
+}
+  
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    
+}
+
+  
+.dropdown:hover .dropdown-content {
+    display: block;background-color: wheat;
+}
+  
+
+@media screen and (min-width: 1900px){
+    .cantidad{
+        font-size: x-large !important;
+    } 
+    .sub-cantidad{
+        font-size: x-large !important;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        min-width: 510px !important;
+        font-size: x-large;
+    }
+    .dropbtn {
+        font-size: x-large;
+    }
+    .sub-cantidad{
+        right: 15%;
+    }
+}

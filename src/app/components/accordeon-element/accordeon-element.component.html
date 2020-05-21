@@ -1,0 +1,13 @@
+<div class="dropdown">
+    <a onclick="myFunction()" class="dropbtn">
+        {{data.name}}
+    </a>
+    <a routerLink="/" class="cantidad">{{data.numero}}</a>
+    <div *ngIf="data.subs" id="myDropdown" class="dropdown-content background-general">
+
+        <div class="dropdown cantidad" *ngFor="let element of data.subcategoria" style="width: 100%; display: inline-flex;">
+            <a routerLink="/">{{element.name}}</a>
+            <a routerLink="/" class="sub-cantidad">{{element.numero}}</a>
+        </div>
+    </div>
+</div>

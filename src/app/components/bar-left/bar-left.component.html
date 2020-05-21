@@ -1,4 +1,4 @@
-<div class="bar-left">
+<div class="bar-left" >
 
     <div class="row pl-3 pr-3">
         <div style="width: 32%; margin-right: 1%;">
@@ -19,7 +19,7 @@
         </div>
         <div style="width: 10%;">
             <a class="btn btn-sm" href="#" style="color: white;">
-                <fa name="search" class="fa-lg"></fa>
+                <fa name="search" [ngClass]="{'fa-lg': p1266, 'fa-2x': p1900}"></fa>
             </a>
         </div>
     </div>
@@ -164,8 +164,10 @@
     <div class="row mt-1">
         <ul>
             <li *ngFor="let opcion of lista_opciones">
-                <a [routerLink]="opcion.url">{{opcion.name}}</a>
+               <!-- <a [routerLink]="opcion.url">{{opcion.name}}</a>-->
+               <app-accordeon-element [data]="opcion"></app-accordeon-element>
             </li>
         </ul>
+        
     </div>
 </div>
